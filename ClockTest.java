@@ -1,4 +1,4 @@
-
+//06.03.2014 tarihli uygulama
 public class ClockTest {
     public static void main(String args[])
     {
