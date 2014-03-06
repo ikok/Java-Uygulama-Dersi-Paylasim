@@ -16,10 +16,10 @@ public class Clock
 
 	
 	public Clock(int hours, int minutes, int seconds) {
-            //setHours(hours);
-            //setMinutes(minutes);
-            //setSeconds(seconds);
-            setClock(hours,minutes,seconds);
+            setHours(hours);
+            setMinutes(minutes);
+            setSeconds(seconds);
+            //setClock(hours,minutes,seconds);
 	}
 	
 	
