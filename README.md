@@ -1,4 +1,4 @@
-Java-Uygulama-Dersi-Payla--m
+Nesne yönelimli Programlama(Java)Dersi-Paylasim alanıdır.
 ============================
 
-Nesne yönelimli Programlama(Java)
+Haftalık yaptıgımız uygulamalara buradan ulaşabiliriniz..
