@@ -1,0 +1,117 @@
+
+/**
+ * @author NMibrahim
+ *
+ */
+//String Operations
+public class string {
+
+	public static void main(String[] args) {
+		
+		
+		String str="";
+		str="Hello";
+		display("string",str);
+		
+		//-----concat-------------------------------
+		
+		str+=" world";
+		str=str.concat(" !");
+		display("string",str);
+		
+		//------startsWith - endsWith----------------
+		
+		if (str.startsWith("Hello")) {
+			System.out.println("string " +"starts with \"Hello\"");
+		}
+		
+		if (str.endsWith("!")) {
+			System.out.println("string " +"ends with \"!\"\n");
+		}else
+		{
+		System.out.println("ends different");	
+			
+		}
+		
+		//----equals----------------------------------
+		if (str.equals("Hello")) {
+			System.out.println("string is equal to Hello");
+		} else {
+			System.out.println("string is NOT equal to Hello");
+		}
+		
+		//---compareTo-- uzunluk,sözcük sıralaması ve büyük küçük harfe göre kıyaslama
+		// A-Z--65-90 / a-z 97-122
+		
+	    String str1= "a";
+	    String str2="a";
+	    int result=str1.compareTo(str2); 
+	    
+	    if (result==0) {
+			System.out.println("str1 is equal str2");
+		} 
+	    else if (result<0) {
+	    	System.out.println("result(-)-----> str1 is less than str2");
+		}else
+		{
+			System.out.println("result(+)----> str1 is greater than str2");
+		}
+
+	    //---- indexOf
+	 String pattern="el";
+	 int pos=str.indexOf(pattern);
+	 System.out.printf("Index of \"%s\" string in str is %d\n",pattern,pos);
+	 
+	 //-----replace 
+	  str=str.replace("o","*");
+	  display("new string ",str);
+	  
+	  //-----charAt
+	  pos=1;
+	  System.out.printf("%c is the charater of str at index: %d\n\n",str.charAt(pos),pos);
+
+	  //-----trim--başta yada sonrakı boslukları kırpma
+	  
+	  System.out.println("********before - trim()************");
+	  String newstr="\n \t       yenı bir string ifade yazdık.    ";
+	  display("yeni string",newstr);
+	  
+	  System.out.println("********after trim() *************** "); 
+	  newstr=newstr.trim();
+	  display("yeni string",newstr);
+	  
+	  //---substring--start from zero
+	  String str10="0123456789 abcd 12345 efgh";
+	  str10=str10.substring(11);//substring starting from index 5
+	   display("new str10",str10);
+	   
+	  str10=str10.substring(0, 10);//substring starting from 0 to 10
+	  display("new str10",str10);
+	  
+	  //---toCharArray()-------
+	  str="Create new array from string";
+	  char[] charArray=str.toCharArray();
+	  
+	  for(char c:charArray){
+		  System.out.print(c);}
+	System.out.println();
+	  
+	  //----split()-------
+	  
+	  String[] splitted=str.split(" ");
+		for(String s:splitted)
+			System.out.println(s);
+	  
+	  splitted=str.split("f");
+			for(String s:splitted)
+				System.out.println(s);
+		    
+	  
+	}
+			
+	public static void display(String name,String strng ){
+		
+		System.out.println(name+":"+strng+"\n");
+		//name:string
+	}
+}
