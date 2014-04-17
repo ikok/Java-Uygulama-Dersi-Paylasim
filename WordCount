@@ -17,7 +17,7 @@ public class WordCount {
 			
 			if(!s.equals(""))
 				count++;
-		System.out.println("\""+sentence+"\" has "+count+" words");
+		System.out.println("\""+sentence+"\" has "+ count +" words");
 
 	}
 
