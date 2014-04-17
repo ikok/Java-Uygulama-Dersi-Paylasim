@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+
+/**
+ * @author NMibrahim
+ *
+ */
+public class WordCount {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter a sentence to count words: ");
+		String sentence=input.nextLine();
+		
+		String[] words=sentence.split(" ");
+		int count=0;
+		for(String s:words)
+			
+			if(!s.equals(""))
+				count++;
+		System.out.println("\""+sentence+"\" has "+count+" words");
+
+	}
+
+}
