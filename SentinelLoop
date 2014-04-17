@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+/**
+ * @author NMibrahim
+ *
+ */
+public class SentinelLoop {
+//program takes lot s of number from user,when they write negative number, loop break then show the average of all value. 
+
+	public static void main(String[] args) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		
+		Scanner input = new Scanner(System.in);
+		int number;
+		do {
+			System.out.print("Enter " + (list.size() + 1) + ". element: ");
+			number = input.nextInt();
+			if (number < 0)
+				break;
+			list.add(number);
+		} while (number >= 0);
+		// Sorting
+		int total = 0;
+		for (int i : list)
+			total += i;
+		total /= list.size();
+		System.out.println("Average is " + total);
+	}
+
+}
